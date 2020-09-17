@@ -1,0 +1,16 @@
+Package: sealevel
+Type: Package
+Title: Sea level rate of change from psmsl tide guage stations
+Version: 0.1
+Authors: Daniel Duplisea
+Maintainer: Daniel Duplisea <daniel.duplisea@dfo-mpo.gc.ca>
+Description: Queries the PSMSL database (psmsl.org) for monthly RLR data from one of its stations that you specify with id. This
+             will also fit a linear regression over all the data and calculate the rate of change in sea level (mm/y) and also
+             determine that level in two periods decided by an automatically selected breakpoint.
+Licence: GPL-3
+Encoding: UTF-8
+Depends:
+        data.table,
+        segmented
+LazyData: true
+RoxygenNote: 7.1.0
