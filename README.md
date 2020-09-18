@@ -27,6 +27,8 @@ however, in the case, searching “yarm” only finds the Yarmouth in Nova
 Scotia, Canada. You will see from the output to the console that its
 station id is 1158.
 
+    find.stations.f("yarm", plot=T)
+
 ![](README_files/figure-markdown_strict/findstations-1.png)
 
     ##      id      lat      long location coastline station YN
@@ -41,6 +43,8 @@ data &lt;1900 but this old fishing port may actually have some so let’s
 set y1 to 1800 just to be sure. Let’s set y2 to 2000 which will then
 calculate the rate of sea level rate of change from 2000 until the most
 recent year that data was reported.
+
+    sealevel.f(1158, 1800, 2000)
 
 ![](README_files/figure-markdown_strict/yarmouth-1.png)
 

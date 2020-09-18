@@ -12,8 +12,7 @@ library(sealevel)
 
 # PSMSL sealevel rate of change
 
-This package queries the PSMSL database  (PSMSL 2020) for data from a station of your choosing, plots the RLR monthly data and determines the
-rate of sea level change in mm/year.
+This package queries the PSMSL database  (PSMSL 2020) for data from a station of your choosing, plots the RLR monthly data and determines the rate of sea level change in mm/year.
 
 # Installation
 
@@ -31,7 +30,7 @@ for Yarmouth keeping in mind that most nations that were once British colonies p
 at the mouth of a River Yar; however, in the case, searching "yarm" only finds the Yarmouth in Nova Scotia, Canada. You will see from the output to the console that its station id is 1158.
 
 
-```{r findstations, echo=FALSE}
+```{r findstations}
 find.stations.f("yarm", plot=T)
 ```
 ## Plotting the sea level data from a station
@@ -39,7 +38,7 @@ find.stations.f("yarm", plot=T)
 So let's plot the sea level and calculate its rate of change for Yarmouth (station id 1158). There are few places that have tide level data <1900 but this old fishing port may actually have some so let's set y1 to 1800 just to be sure. Let's set y2 to 2000 
 which will then calculate the rate of sea level rate of change from 2000 until the most recent year that data was reported.
 
-```{r yarmouth, echo=FALSE}
+```{r yarmouth}
 sealevel.f(1158, 1800, 2000)
 ```
 
